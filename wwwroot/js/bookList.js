@@ -19,11 +19,11 @@ function loadDataTable() {
                 "data": "id",
                 "render": function (data) {
                     return `<div class="text-center">
-                        <a href="/BookList/Edit?id=${data}" class='btn btn-success text-white' style='cursor:pointer; width:70px;'>
+                        <a href="/BookList/Edit?id=${data}" class='btn btn-info text-white' style='cursor:pointer; width:70px;'>
                             Edit
                         </a>
                         &nbsp;
-                        <a class='btn btn-danger text-white' style='cursor:pointer; width:70px;'
+                        <a class='btn btn-warning text-white' style='cursor:pointer; width:70px;'
                             onclick=Delete('/api/book?id='+${data})>
                             Delete
                         </a>
@@ -41,8 +41,8 @@ function loadDataTable() {
 function Delete(url) {
     swal({
         title: "Are you sure?",
-        text: "Once deleted, you will not be able to recover",
-        icon: "warning",
+        text: "Once deleted, you will not be able to recover this item",
+        icon: "info",
         buttons: true,
         dangerMode: true
     }).then((willDelete) => {

@@ -34,7 +34,7 @@ namespace TrackMyBooks.Pages.BookList
                 BookFromDb.ISBN = Book.ISBN;
 
                 await _db.SaveChangesAsync();
-                return RedirectToPage("Index");
+                return RedirectToPage("/Index");
             }
 
             return RedirectToPage();

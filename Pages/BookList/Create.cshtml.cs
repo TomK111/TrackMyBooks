@@ -30,7 +30,7 @@ namespace TrackMyBooks.Pages.BookList
             {
                 await _db.Book.AddAsync(Book);
                 await _db.SaveChangesAsync();
-                return RedirectToPage("Index");
+                return RedirectToPage("/Index");
             }
             else
             {
