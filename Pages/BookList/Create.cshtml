@@ -46,7 +46,15 @@
                 <label asp-for="Book.Condition"></label>
             </div>
             <div class="col-6">
-                <input asp-for="Book.Condition" class="form-control" />
+                <select asp-for="Book.Condition" class="form-control">
+                    <option></option>
+                    <option>Like New</option>
+                    <option>Near Fine</option>
+                    <option>Very Good</option>
+                    <option>Good</option>
+                    <option>Fair</option>
+                    <option>Poor</option>
+                </select>
             </div>
             <span asp-validation-for="Book.Condition" class="text-danger"></span>
         </div>
