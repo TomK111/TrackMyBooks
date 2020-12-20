@@ -12,9 +12,12 @@ function loadDataTable() {
             "datatype": "json"
         },
         "columns": [
-            { "data": "name", "width": "20%" },
-            { "data": "author", "width": "20%" },
-            { "data": "isbn", "width": "20%" },
+            { "data": "name", "width": "10%" },
+            { "data": "author", "width": "10%" },
+            { "data": "isbn", "width": "10%" },
+            { "data": "condition", "width": "10%" },
+            { "data": "dateCheckedOut", "width": "10%" },
+            { "data": "dateReturned", "width": "10%" },
             {
                 "data": "id",
                 "render": function (data) {
@@ -32,7 +35,7 @@ function loadDataTable() {
             }
         ],
         "language": {
-            "emptyTable": "no data found"
+            "emptyTable": "No Data Found"
         },
         "width": "100%"
     });

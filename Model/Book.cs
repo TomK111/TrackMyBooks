@@ -14,6 +14,9 @@ namespace TrackMyBooks.Model
         public string Name { get; set; }
         public string Author { get; set; }
         public int ISBN { get; set; }
+        public string Condition { get; set; }
+        public string DateCheckedOut { get; set; }
+        public string DateReturned { get; set; }
 
     }
 }
