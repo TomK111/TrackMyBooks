@@ -13,6 +13,7 @@ namespace TrackMyBooks.Model
         [Required]
         public string Name { get; set; }
         public string Author { get; set; }
+        public int ISBN { get; set; }
 
     }
 }
