@@ -10,7 +10,7 @@ namespace TrackMyBooks.Pages.BookList
 {
     public class EditModel : PageModel
     {
-        private ApplicationDbContext _db;
+        private readonly ApplicationDbContext _db;
 
         public EditModel(ApplicationDbContext db)
         {
